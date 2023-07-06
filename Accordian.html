@@ -53,7 +53,7 @@
 
 <!--Accordion-End-->
 <br><br>
-<!--Alert-Start-->
+<!--Alert-Message-Start-->
 
     <div class="container">
         <div class="alert alert-primary">Alert Message</div>
@@ -64,8 +64,35 @@
         <div class="alert alert-danger">Alert Danger</div>
         <div class="alert alert-dark">Alert Dark</div>
         <div class="alert alert-light">Alert Light</div>
+
+        <div id="liveAlertplaceholder"></div>
+        <button class="btn btn-primary" id="liveAlertbtn">Show Alert Button</button>
     </div>
 
-<!--Alert-End-->
+<!--Alert-Message-End-->
+<br><br>
+<!--Alert-Advanced-Way-Start-->
+        <!-- <div id="liveAlertplaceholder"></div>
+        <button class="btn btn-primary" id="liveAlertbtn">Show Alert Button</button>     -->
+    <script>
+        var alertplaceholder = document.getElementById('liveAlertplaceholder')
+        var alertTrigger = document.getElementById('liveAlertbtn')
+
+        function alert(message, type){
+            var wrapper = document.createElement('div')
+            wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+            alertplaceholder.append(wrapper)
+        }
+
+        if(alertTrigger){
+            alertTrigger.addEventListener('click',function (){
+                alert('Nice, you triggered this alert message!', 'success')
+            })
+        }
+    </script>
+
+<!--Alert-Advanced-Way-End-->
+
+
 </body>
 </html>
