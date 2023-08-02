@@ -1,0 +1,188 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+%PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+\usepackage{amssymb}% to access $\blacksquare$
+\usepackage{graphicx} %package to manage images
+\graphicspath{ {./images/} }
+%\documentclass[12pt,a4paper,sans]{document} 
+%\documentclass{article}
+\usepackage{blindtext}
+\usepackage[scale=0.75]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz,lipsum,lmodern}
+\usepackage[most]{tcolorbox}
+\begin{document}
+\begin{center}
+\huge {Bangladesh University of Business and Technology (BUBT)}
+
+   \includegraphics[width=40mm]{b.jpg}
+   
+   
+   \textbf{Lab Report}
+\end{center}
+\vspace{8mm}
+%_____________________
+\begin{enumerate}
+  \large{
+  Course code: CSE 352
+  \newline
+  Course title: Artificial Intelligence Lab
+  \newline
+  Problem no: 01
+  \newline
+  Problem name: Write a python program to solve 5 Problems.
+  } 
+\end{enumerate}
+
+%__________________________
+
+
+\vspace{8mm}
+
+\begin{tcolorbox}[colback=white,colframe=black,center,width=90mm]
+  \textbf{Submitted by}
+  \newline
+  
+  Name: MD Rabiul Islam
+  
+  Id:   19201103070
+  
+  Intake:  43
+  
+  Section: 2
+  
+  Program: B.Sc. Engg in CSE
+  
+  Semester: Spring-2022
+\end{tcolorbox}
+\vspace{5mm}
+
+\begin{tcolorbox}[colback=white,colframe=black,center,width=90mm]
+ \textbf{Submitted to}
+ \newline
+  
+  Humayra Ahmed
+  
+  Lecturer, Department of CSE
+  
+  Bangladesh University of Business and Technology
+  
+\end{tcolorbox}
+\vspace{30mm}
+\underline{\textbf{Signature of Teacher}}
+\textbf{}
+
+\pagebreak
+%___________________________________________________________
+\begin{itemize}
+    \item\textbf{Problem no: }01 
+\item \textbf{Problem name:} Write a python program to input basic salary of an employee and calculate gross salary and also.
+
+\textbf{Code Input:} 
+\begin{center}
+\includegraphics{image (1).png}
+\end{center}
+\item \textbf{Description:}
+
+\textbf{4.1 Algorithm:}
+\begin{enumerate}
+    \item Take an input "a".
+    \item if taken input "a" is smaller then or equal to 10000 than hra will be multiplication of 0.2 and "a" and da will be multiplication of 0.8 and "a".
+    \item Similarly,if "a" is greater then or equal 10001 and less then or equal 20000 than hra will be "a*0.25" and da will be "a*0.9".
+    \item else a is greater then 20001 than hra= a*0.3 and da= a*0.95.
+    \item after getting updated hra and da total salary will be "a+hra+da".
+    \item print total salary.
+\end{enumerate}
+\textbf{Code Output:} 
+\newline
+\includegraphics[width=100mm]{output2.jpg}
+\pagebreak
+%__________________________________________________________
+
+
+\item\textbf{Problem no: 02}
+\item \textbf{Problem name:} write a python program to input electricity unit charge and calculate the total electricity bill.
+\newline
+\includegraphics{image.png}
+
+
+\begin{enumerate}
+    \item Take an input "a".
+    \item if taken input "a" is smaller then or equal to 50 than a will be substraction by 50 and multiply by 0.75. The total bill will be "updated bill+(50*0.5)"
+    \item Similarly,if "a" is greater then 150 than a will be substraction by 150 and multiply by 1.25. The total bill will be "updated bill+(50*0.5)+(100*0.75)".
+    \item else a is greater then 500 than  a will be substraction by 500 and multiply by 1.50. The total bill will be "updated bill+(50*0.5)+(100*0.75)+(100*1.20)".
+    \item print bill.
+\end{enumerate}  
+\textbf{Code Output: }
+\newline
+\includegraphics[width=100mm]{output1.jpg}
+\pagebreak
+%__________________________________________________________
+\item\textbf{Problem no: 03}
+\item \textbf{Problem name:} Write a python program to print Fibonacci series up to n items using recursion.
+\newline
+\includegraphics{p1_code.png}
+\newline
+\begin{enumerate}
+    \item Take an input "n".
+    \item if taken input "n" is smaller then 0 then output is "Positive"
+    \item Similarly,if "n" is equal to 1 then output "1" and "0"
+    \item else "n" is when "a=0" and "b=1" and "get=0" then "now = a+b", "a=b", "b=now" and "get=get+1". The loop going up to get is less than n.
+    \item Print a.
+\end{enumerate}
+\pagebreak
+\textbf{Code Output: }
+\newline
+\includegraphics{p1_output.png}
+%__________________________________________________________
+\item\textbf{Problem no: 04}
+\item \textbf{Problem name:} Write a python program to input number from user and check whether number is Strong number or not.
+\newline
+\includegraphics{p2_code.png}
+\pagebreak
+\begin{enumerate}
+    \item Take an input "a".
+    \item When "num = 0". Input "a" is string. Now every string converted to integer n is equal to a.
+    \item If a less than 0 then print "un-define"
+    \item Similarly, if a equals to 0 then print 1.
+    \item else, when "fact=1" then every integer "a" range up to "a+1" with "fact=fact*a". Now "num = num+fact"
+    \item If "num = 145" then print "Strong Number"
+    \item else, print "Please enter input 145".
+\end{enumerate}
+
+\textbf{Code Output: }
+\newline
+\includegraphics{p2_output.png}
+\newline
+%__________________________________________________________
+\item\textbf{Problem no: 05}
+\item \textbf{Problem name:} Print the following number pattern by using function.
+\newline
+\includegraphics{p3_code.png}
+\begin{enumerate}
+    \item Take an input number as string "n" and integer "a".
+    \item print "n"
+    \item Now "n" is going up "a+1". Every time start from index 1. When "num=0".
+    \item Again now, "n" of every string "j" converted to integer then "num = 10*num + j+1"
+    \item Print "num"
+    \item Now converted "num" as integer then replace to "n=num"
+\end{enumerate}
+\textbf{Code Output: }
+\newline
+\includegraphics{p3_output.png}
+\newline
+
+%__________________________________________________________
+
+
+\end{itemize}
+\textbf{4.2 Used functions:}
+\begin{enumerate}
+    \item Float(): Float() is a method that returns a floating-point number for a provided number or string. Float() returns the value based on the argument or parameter value that is being passed to it. If no value or blank parameter is passed, it will return the values 0.0 as the floating-point output.
+    \item if--else(): The if-else statement is used to execute both the true part and the false part of a given condition. If the condition is true, the if block code is executed and if the condition is false, the else block code is executed.
+    \item print(): The print() function prints the specified message to the screen, or other standard output device. The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+    \item for(): A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+    \item while(): The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true. 
+\end{enumerate}
+\end{document}
